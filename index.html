@@ -1,0 +1,345 @@
+<html> 
+<head>
+    <style>
+        header{
+            background-color: salmon;
+            width: 100%;
+            height:110px;
+        }
+        #logo{
+            width: 75px;
+            height: 75px;
+            margin-top: 18px;
+            margin-left: 11%;
+            position: absolute;
+        }
+        #title{
+            position: absolute;
+            margin-left: 18%;
+            margin-top:31px;
+            font-size: 26.5pt;
+        }
+        #man{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            margin-left: 75%;
+            margin-top: 18px;
+        }
+        #cart{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            margin-left: 82%;
+            margin-top: 18px
+        }
+        #div1{
+            width: 33%;
+            height: 600px;
+            border: solid;
+            display: inline-block;
+        }
+        #div2{
+            width: 32%;
+            height: 600px;
+            border: solid;
+            display: inline-block;
+        }
+        #div3{
+            width: 32.89%;
+            height: 600px;
+            border: solid;
+            display: inline-block;
+        }
+        #hoodie1{
+            width: 360px;
+            height: 360px;
+            position: absolute;
+            margin-top: 1%;
+            margin-left: 3.2%;
+        }
+        #hoodie2{
+            width: 380px;
+            height: 380px;
+            position: absolute;
+            margin-top: 1%;
+            margin-left: 3.2%;
+        }
+        #hoodie3{
+            width: 380px;
+            height: 380px;
+            position: absolute;
+            margin-top: 1%;
+            margin-left: 3.2%;
+        }
+        #para1{
+            padding: 25px;
+            padding-left: 40px;
+            position: absolute;
+            margin-top: 21.7%;
+            font-size: 15pt;
+            padding-left: 130px;
+            color: #a91a69
+        }
+        #para2{
+            padding: 25px;
+            position: absolute;
+            margin-top: 21.7%;
+            font-size: 15pt;
+            padding-left: 130px;
+            color: #a91a69
+        }
+        #para3{
+            padding: 25px;
+            position: absolute;
+            margin-top: 21.7%;
+            font-size: 15pt;
+            padding-left: 130px;
+            color: #a91a69
+        }
+        #des1{
+            padding: 25px;
+            padding-left: 40px;
+            position: absolute;
+            margin-top: 28%;
+            font-size: 15pt;
+            padding-left: 5px;
+        }
+        #des2{
+            padding: 25px;
+            padding-left: 40px;
+            position: absolute;
+            margin-top: 28%;
+            font-size: 15pt;
+            padding-left: 5px;
+        }
+         #des3{
+            padding: 25px;
+            padding-left: 40px;
+            position: absolute;
+            margin-top: 28%;
+            font-size: 15pt;
+            padding-left: 5px;
+        }
+        #div1:hover{
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: .6s;
+        }
+         #div2:hover{
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: .6s;
+        }
+        #div3:hover{
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: .6s;
+        }
+        #qty1{
+            position: absolute;
+            margin-top: 34%;
+            margin-left: 1%;
+            font-size: 15pt;
+            width: 60px;
+            color: orangered;
+            background-color: black;
+            display: inline-block;
+        }
+         #qty2{
+            position: absolute;
+            margin-top: 34%;
+            margin-left: 1%;
+            font-size: 15pt;
+            width: 60px;
+            color: orangered;
+            background-color: black;
+            display: inline-block;
+        }
+         #qty3{
+            position: absolute;
+            margin-top: 34%;
+            margin-left: 1%;
+            font-size: 15pt;
+            width: 60px;
+            color: orangered;
+            background-color: black;
+            display: inline-block;
+        }
+        #something{
+            width: 100%;
+            height: 50px;
+            background-color: skyblue;
+            color: darkblue;
+            font-size: 20pt
+        }
+        #output1{
+            margin-left: 2%;
+            margin-top: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(51, 255, 241, 0.21);
+        }
+        #output2{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(255, 116, 51, 0.21);
+        }
+        #output3{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(214, 51, 255, 0.21);
+        }
+        #output4{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(51, 255, 54, 0.21);
+        }
+        #output5{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(255, 51, 51, 0.21);
+        }
+        #output6{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(92, 51, 255, 0.21);
+        }
+        #ext{
+            height: 50px;
+        }
+        #output7{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color:rgba(51, 255, 241, 0.21);
+        }
+        #output8{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(255, 116, 51, 0.21);
+        }
+        #output9{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(214, 51, 255, 0.21);
+        }
+        #output10{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(51, 255, 54, 0.21) ;
+        }
+        #output11{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(255, 51, 51, 0.21);
+        }
+        #output12{
+            margin-left: 2%;
+            font-size: 20pt;
+            width: 270px;
+            background-color: rgba(92, 51, 255, 0.21);
+        }
+    </style>
+    <script>
+        function exit(){
+            var p1 = 11;
+            var p2 = 13;
+            var p3 = 15;
+            var wp1 = 8;
+            var wp2 = 10;
+            var wp3 = 11;
+            var qty1 = parseFloat(document.getElementById("qty1").value);
+            var qty2 = parseFloat(document.getElementById("qty2").value);
+            var qty3 = parseFloat(document.getElementById("qty3").value);
+            var op1 =  document.getElementById("output1");
+            var op2 =  document.getElementById("output2");
+            var op3 =  document.getElementById("output3");
+            var op4 =  document.getElementById("output4");
+            var op5 =  document.getElementById("output5");
+            var op6 =  document.getElementById("output6");
+            var op7 =  document.getElementById("output7");
+            var op8 =  document.getElementById("output8");
+            var op9 =  document.getElementById("output9");
+            var op10 =  document.getElementById("output10");
+            var op11 =  document.getElementById("output11");
+            var op12 =  document.getElementById("output12");
+            var taxRate = 8.75;
+            var customerSubtotal = (p1 * qty1)+(p2 * qty2)+(p3 * qty3);
+            var companySubtotal = (wp1 * qty1)+(wp2 * qty2)+(wp3 * qty3);
+            var profit = (customerSubtotal) - (companySubtotal);
+            var soldITM = (qty1) + (qty2) + (qty3);   
+            var tax = Math.round((customerSubtotal) * 0.0875);
+            var shipping = 0;
+            if (customerSubtotal < 100){
+                shipping = 25;
+            }else if(customerSubtotal >= 100  && customerSubtotal <= 200){
+                shipping = 10;
+            }else{
+                shipping = 0;
+            }
+            var customerTotal = (customerSubtotal) + (tax) + shipping;
+            op1.innerHTML = "CUSTOMER INFO";
+            op2.innerHTML = "SubTotal --------- $"+ customerSubtotal;
+            op3.innerHTML = "Tax-rate ---------- " + taxRate ;
+            op4.innerHTML = "Tax -------------- $" + tax;
+            op5.innerHTML = "shipping ----------- $" + shipping;
+            op6.innerHTML = "Total ----------- $" +  customerTotal;
+            // company info
+            op7.innerHTML = "COMPANY INFO";
+            op8.innerHTML = "CustomerSubTotal - $"+ customerSubtotal;
+            op9.innerHTML = "companySubtotal - $" + companySubtotal ;
+            op10.innerHTML = "Tax -------------- $" + tax;
+            op11.innerHTML = "Profit ----------- $" + profit;
+            op12.innerHTML = "Items sold ---------" + soldITM;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+    <header>
+        <img src="logo.png" id="logo">
+        <h1 id="title"> Merch Shop </h1>
+        <img id="man" src="man.png">
+        <img id="cart" src="card.png">
+    </header>
+    <div id="div1">
+        <img id="hoodie1" src="hoodie1.png">
+        <p id="para1">Heavy Duty Sweatshirt<br> $11 - shipping: $10 <br> Only 15 in stock <br>Rating: &#9733 &#9733 &#9733 &#9733 &#9734 </p>
+        <p id="des1">- PREMIUM QUALITY- Don't compromise with quality.<br> Check your new favorite Fleece Hoodie Sweatshirt. Get your own,<br> you will not regret it. </p>
+        <input type="text" id="qty1" placeholder="QTY">
+    </div>
+    <div id="div2">
+        <img id="hoodie2" src="hoodie2.png">
+        <p id="para2">Heavy Duty Sweatshirt<br> $13 - shipping: $10 <br> Only 10 in stock <br>Rating: &#9733 &#9733 &#9733 &#9734 &#9734 </p>
+        <p id="des2">- Ringspun Pre-Shrunk Lightweight French Terry <br> Full Zip Hoodie Hooded Sweatshirt - Hoodies For Men <br> 55% Cotton, 45% Polyester </p>
+        <input type="text" id="qty2" placeholder="QTY">
+    </div>  
+    <div id="div3">
+        <img id="hoodie3" src="hoodie3.png">
+         <p id="para2">Heavy Duty Sweatshirt<br> $15 - shipping: $10 <br> Only 5 in stock <br>Rating: &#9733 &#9733 &#9733 &#9733 &#9733 </p>
+        <p id="des3">- Machine Wash Cold With Like Colors. Only Non-Chlorine<br> Bleach When Needed. Tumble Dry Low.<br>30 days 100% Money Back Guarantee</p>
+        <input type="text" id="qty3" placeholder="QTY">
+    </div><br>
+    <button onclick="exit()" id="something"> Check out </button>
+        <div id="output1"></div>
+        <div id="output2"></div>
+        <div id="output3"></div>
+        <div id="output4"></div>
+        <div id="output5"></div>
+        <div id="output6"></div>
+        <div id="ext"></div>
+        <div id="output7"></div>
+        <div id="output8"></div>
+        <div id="output9"></div>
+        <div id="output10"></div>
+        <div id="output11"></div>
+        <div id="output12"></div>
+</html>
